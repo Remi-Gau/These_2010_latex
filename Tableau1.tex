@@ -1,0 +1,62 @@
+% \documentclass[a4paper,12pt,twoside]{report}
+% 
+% \usepackage[utf8x]{inputenc}
+% %\usepackage[latin1]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage[francais]{babel}
+% 
+% \usepackage{setspace} % Interligne
+% %\singlespacing
+% %\onehalfspacing
+% \doublespacing
+% 
+% \usepackage{soul} % Pour souligner ou barrer du texte
+% \usepackage{ulem}
+% 
+% \usepackage{textcomp}
+% 
+% \usepackage{wrapfig} % pour encadrer les figures avec du texte
+% \usepackage{graphicx}
+% 
+% \usepackage{multicol} % Pour utiliser l'environnement multicol
+% \setlength\columnseprule{.4pt} % Pour mettre un trait séparateur de colonnes\usepackage{multirow} % Pour fusionner les lignes dans les tableaux
+% 
+% \usepackage{array} % Pour centrer les lignes en hauteur dans un tableau
+% \usepackage{rotating} % Pour tourner un tableau
+% 
+% \usepackage[table]{xcolor} %Pour colorer des cellules
+% 
+% \usepackage{xcolor}
+% \usepackage{colortbl}
+% 
+% 
+% \begin{document}
+% \begin{sidewaystable}
+
+\setlength{\tabcolsep}{1pt}
+\centering
+\caption{\textbf{Réponses des neurones 5-HT du RMg à la morphine administrée par voie systémique}}
+\setlength\minrowclearance{6pt}
+
+\newcolumntype{A}{%
+>{\centering}%
+m{2.8cm}}
+
+\newcolumntype{D}{%
+>{\centering\bfseries}%
+m{2.8cm}}
+
+{%
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
+\begin{tabular}{|A|A|m{6.5cm}|A|D|D|D|c}
+\hline
+\textbf{Études}			&\textbf{Modèle expérimental}				&\centering\textbf{Identification des neurones}										&\textbf{Morphine}		& Insensibles		&Inhibés	&Activés&	\\ \hline
+Auerbach et al. \newline1985 	&Chat éveillé 						& Pattern de décharge \newline\footnotesize (lent, régulier, inactifs pendant le sommeil) \newline Pharmacologique 	&2 mg/kg \newline i.p. 		& \multicolumn{2}{c|}{\textbf{15}} 	&1	&	\\ \hline
+Chiang \& Pan\newline1985	&Rat anesthésié \footnotesize uréthane 1,1 g/kg 	& Pattern de décharge \newline\footnotesize (lent, régulier) \newline Conduction lente 					&5 mg/kg \newline i.p. 		& 6 		& 3 			&1	&	\\ \hline
+Gao et al. \newline1998 	&Rat anesthésié \footnotesize halothane 1\% 		& Pattern de décharge \newline\footnotesize (lent, régulier) \newline Immunohistochimique 				&0,5-10 mg/kg \newline s.c. 	& 20		& 6 			&6	&	\\ \hline
+\end{tabular}
+
+}
+% \end{sidewaystable}
+% \end{document}

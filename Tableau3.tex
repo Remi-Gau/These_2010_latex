@@ -1,0 +1,68 @@
+% \documentclass[a4paper,12pt,twoside]{report}
+% 
+% \usepackage[utf8x]{inputenc}
+% %\usepackage[latin1]{inputenc}
+% \usepackage[T1]{fontenc}
+% \usepackage[francais]{babel}
+% 
+% \usepackage{setspace} % Interligne
+% %\singlespacing
+% %\onehalfspacing
+% \doublespacing
+% 
+% \usepackage{soul} % Pour souligner ou barrer du texte
+% \usepackage{ulem}
+% 
+% \usepackage{textcomp}
+% 
+% \usepackage{wrapfig} % pour encadrer les figures avec du texte
+% \usepackage{graphicx}
+% 
+% \usepackage{multicol} % Pour utiliser l'environnement multicol
+% \setlength\columnseprule{.4pt} % Pour mettre un trait séparateur de colonnes\usepackage{multirow} % Pour fusionner les lignes dans les tableaux
+% 
+% \usepackage{array} % Pour centrer les lignes en hauteur dans un tableau
+% \usepackage{rotating} % Pour tourner un tableau
+% 
+% \usepackage[table]{xcolor} %Pour colorer des cellules
+% 
+% \usepackage{xcolor}
+% \usepackage{colortbl}
+% 
+% 
+% \begin{document}
+% \begin{table}
+\centering
+{%
+\newcommand{\mc}[3]{\multicolumn{#1}{#2}{#3}}
+
+\newcolumntype{A}{%
+>{\centering\bfseries}%
+m{5cm}}
+
+\newcolumntype{B}{%
+>{\centering}%
+m{1cm}}
+
+\begin{center}
+\caption{\textbf{Décharges basales des neurones sérotoninergiques du groupe B3 selon leurs réponses à une stimulation nociceptive thermique}}
+
+\bigskip 
+
+\begin{tabular}{|A|B|m{4.5cm}|m{4.5cm}|}
+\hline
+Réponse à une stimulation nociceptive	& \textbf{n}	& \begin{center}\textbf{Fréquence (Hz)}\end{center}	& \begin{center}\textbf{CV} \end{center} \\ \hline
+Activés 				& 27 		& 1.55 $\pm$ 0.12 (0.37 - 2.93) 				& 0.45 $\pm$ 0.03 (0.14 - 0.73)		 \\ \hline
+Inhibés					& 7 		& 1.06 $\pm$ 0.10 (0.64 - 1.35) 				& 0.26 $\pm$ 0.02 (0.20 - 0.33)		 \\ \hline
+Pas de réponse 				& 3 		& 0.65 $\pm$ 0.10 (0.48 - 0.82) 				& 0.35 $\pm$ 0.03 (0.31 - 0.41)		 \\ \hline
+Total 					& 37 		& 1.38 $\pm$ 0.10 						& 0.41 $\pm$ 0.02				 \\ \hline
+\end{tabular}
+\end{center}
+
+{\protect\parbox[t]{18cm}{
+\small Les valeurs sont exprimées sous forme de moyenne $$\pm$$ SEM. Entre parenthèses sont indiquées les valeurs extrêmes observées pour chaque groupe.
+}}
+
+}
+% \end{table}
+% \end{document}
